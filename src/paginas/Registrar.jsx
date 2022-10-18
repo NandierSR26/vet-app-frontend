@@ -35,11 +35,10 @@ const Registrar = () => {
         try {
             await clienteAxios.post('/veterinarios', { nombre, email, password })
             setAlerta({
-                msg: 'Creado Correctamente, revisa tu email',
+                msg: 'Creado Correctamente, Inicia sesion',
                 error: false
             })
         } catch (error) {
-            console.log(error);
             setAlerta({
                 msg: error.response.data.msg,
                 error: true
@@ -140,9 +139,6 @@ const Registrar = () => {
                     <Link 
                         className='block text-center my-5 text-gray-500'
                         to="/">¿Ya tienes una cuenta? Inicia Sesión</Link >
-                    <Link 
-                        className='block text-center my-5 text-gray-500'
-                        to="/olvide-password">Olvide mi Password</Link >
                 </nav>
 
             </div>

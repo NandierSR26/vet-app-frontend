@@ -97,9 +97,6 @@ const Login = () => {
                         <Link 
                             className='block text-center my-5 text-gray-500'
                             to="/registrar">¿No tienes una cuenta? Regístrate</Link >
-                        <Link 
-                            className='block text-center my-5 text-gray-500'
-                            to="/olvide-password">Olvide mi Password</Link >
                     </nav>
                 </div>
 
